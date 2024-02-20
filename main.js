@@ -1,4 +1,4 @@
-const observer = new MutationObserver(myFunction);
+const observer = new MutationObserver(check);
 
 const config = { attributes: true, childList: true, subtree: true};
 
@@ -10,7 +10,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function myFunction(mutationsList, observer) {
+async function check(mutationsList, observer) {
     mutationsList.forEach(mutation => {
         if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
             mutation.addedNodes.forEach(addedNode => {
