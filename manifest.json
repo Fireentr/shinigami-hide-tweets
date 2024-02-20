@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Shinigami Hide Tweets",
+    "version": "1.0",
+  
+    "description": "Automatically hides tweets by users marked as transphobic on shinigami eyes.",
+  
+    "icons": {
+      "48": "48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
+  
