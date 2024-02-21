@@ -9,13 +9,11 @@
       "48": "48.png"
     },
 
-    {
       "browser_specific_settings": {
         "gecko": {
           "id": "shin@ayahuasca.gay"
         }
-      }
-    },
+      },
   
     "content_scripts": [
       {
